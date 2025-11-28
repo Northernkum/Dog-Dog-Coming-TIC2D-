@@ -205,15 +205,7 @@ def main():
             
             # 显示操作说明
             info = "按ESC键退出 | 单次动作执行中忽略其他手势"
-            cv2.putText(image, info, (10, 150), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 255), 1)
             
-            # 显示图像
-            cv2.imshow('Gesture Control (Bool Trigger)', image)
-            
-            # 退出检查
-            if cv2.waitKey(1) == 27: 
-                print("收到退出信号")
-                break
                 
     except KeyboardInterrupt:
         print("程序被用户中断")
